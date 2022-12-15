@@ -1,0 +1,130 @@
+body,
+html {
+    /* background-color: #4ABDAC; */
+    background-image: url(https://cdn5.vectorstock.com/i/1000x1000/26/44/spot-light-background-vector-3622644.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e9cb8e;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#header-img {
+    height: 60px;
+    width: 80px;
+    padding: 15px;
+    margin-left: 50px;
+}
+
+header h1 {
+    color: #a74226;
+    margin-top: 25px;
+    margin-left: 140px;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    width: 20%;
+}
+
+#article {
+    width: 80%;
+}
+
+#nav-container {
+    /* background-color: #ccc; */
+   background-image: url(https://i.pinimg.com/originals/ed/ae/1b/edae1b76069ae9e382dc041f7de8f347.jpg); 
+       margin: 20px;
+    border-radius: 20px;
+    height: 60vh;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    height: 100%;
+    width: 50%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scrolling if the sidenav has too much content */
+}
+
+li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+li a.active {
+    background-color: grey;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+#body-container {
+    background-color: #f1f1f1;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    min-height: 55vh;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#body-container h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+footer {
+    background-color: #e9cb8e;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    color: #a74226;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#sidepanel {
+    background-color: #f1f1f1;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    height: 55vh;
+    width: 20%;
+}
+
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/* Darker background on mouse-over */
+
+.btn:hover {
+    background-color: RoyalBlue;
+}

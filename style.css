@@ -1,0 +1,132 @@
+body,
+html {
+    background-color: #4ABDAC;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fa0a0a;
+    border-radius: 20px;
+    border: 2px solid rgb(206, 16, 16);
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#header-img {
+    height: 60px;
+    width: 80px;
+    padding: 15px;
+    margin-left: 50px;
+}
+
+header h1 {
+    color: #13a053;
+    margin-top: 25px;
+    margin-left: 140px;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    width: 40%;
+}
+
+#article {
+    width: 90%;
+}
+
+#nav-container {
+    background-image: linear-gradient(rgba(243, 239, 11, 0.7), rgba(177, 64, 243, 0.3)),url(https://www.groovypost.com/wp-content/uploads/2012/05/colors-featured.jpg);
+    margin: 40px;
+    border-radius: 40px;
+    height: 70vh;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 1;
+    padding: 40px;
+    height: 140%;
+    width: 70%;
+    
+    overflow: auto;
+    
+}
+
+li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: rgb(76, 169, 212);
+}
+
+li a.active {
+    background-color: grey;
+    color: rgb(158, 77, 77);
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: rgb(245, 155, 155);
+}
+
+#body-container {
+    background-color: #e55b5be1;
+    background-image: linear-gradient(rgba(243, 239, 11, 0.7), rgba(177, 64, 243, 0.3)),url(https://www.groovypost.com/wp-content/uploads/2012/05/colors-featured.jpg);
+    height: 80%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    min-height: 55vh;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#body-container h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+footer {
+    background-color: #F7B733;
+    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/abstract-smoke-background-lastsax.jpg);
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    color: #f73f0c;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#sidepanel {
+    background-image: linear-gradient(rgba(243, 239, 11, 0.7), rgba(177, 64, 243, 0.3)),url(https://www.groovypost.com/wp-content/uploads/2012/05/colors-featured.jpg);
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    height: 55vh;
+    width: 20%;
+}
+
+.btn {
+    background-color: rgb(218, 189, 189);
+    border: none;
+    color: rgb(102, 177, 102);
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: rgb(139, 23, 216);
+}

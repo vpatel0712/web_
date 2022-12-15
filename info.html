@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="info.js"></script>
+    <title>Vandan sanjaykumar patel</title>
+</head>
+
+<body>
+    <header>
+        <img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpk_HZcCi3SgLEUATm3-lEn1GLtjOvWVe6KiILbd-MA&s" alt="logo" />
+        <h1>My Personal Site</h1>
+    </header>
+
+    <div id="main">
+        <nav>
+            <div id="nav-container">
+                <ul>
+                    <li><a href="final_web.html">Home</a></li>
+                    <li><a class="active" href="info.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="body-container">
+            <form action="https://httpbin.org/post" method="post" class="contactUs" name="signup" onsubmit="return checkForm();">
+                <div class="contact">
+
+                    <label for="name">
+                        Name:
+                    </label>
+                    <input type="text" name="name" id="name" pattern="^[A-Z][a-zA-Z]*" required><br><br>
+                    <label for="address">
+                        Address:
+                    </label>
+                    <input type="text" name="address" id="address" required><br><br>
+
+                    <label for="city">City:</label>
+                    <select name="city" id="city" required>
+                        <option value="0">-select-</option>
+                        <option value="Toronto">Toronto</option>
+                        <option value="Montreal">Montreal</option>
+                        <option value="Calgary">Calgary</option>
+                        <option value="Ottawa">Ottawa</option>
+                        <option value="Edmonton">Edmonton</option>
+                        <option value="Winnipeg">Winnipeg</option>
+                        <option value="Mississauga">Mississauga</option>
+                        <option value="Vancouver">Vancouver</option>
+                        <option value="Brampton">Brampton</option>
+                        <option value="Hamilton">Hamilton</option>
+                    </select><br><br>
+
+                    <label>Purpose:</label>
+                    <input type="radio" name="Purpose" id="Question" value="Question" required>
+                    <label for="Question">Question</label>
+                    <input type="radio" name="Purpose" id="Comment" value="Comment">
+                    <label for="Comment">Comment</label>
+                    <input type="radio" name="Purpose" id="Hiring" value="Hiring">
+                    <label for="Hiring">Hiring</label><br><br>
+                    <label for="content">
+                        Enter your content here:
+                        <textarea rows="5" cols="25"></textarea><br><br>
+                    </label>
+
+
+                    <label>
+                        Email:
+                    </label>
+                    <input type="email" id="email" required><br><br>
+
+                    <label>
+                        Age:
+                    </label>
+                    <input type="number" min="18" max="60" id="age" required><br><br>
+
+
+                    <div id="buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" onclick="clearSidepanel()" value="Reset">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <div id="sidepanel">
+            <p>Basic Information:</p>
+            <table>
+                <tr>
+                    <th>Age:</th>
+                    <th>19</th>
+                </tr>
+                <tr>
+                    <th>e-mail:</th>
+                    <th>vpatel276@myseneca.ca</th>
+                </tr>
+                <tr>
+                    <th>Languages</th>
+                    <th>English, Hindi and Gujarati</th>
+                </tr>
+                <tr>
+                    <th>Class-Section:</th>
+                    <th>Web222-NII</th>
+                </tr>
+                <tr>
+                    <th>Student ID:</th>
+                    <th>165813213</th>
+                </tr>
+                <tr>
+                    <th>Professor:</th>
+                    <th>Robin li</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div id="current_date">
+            <script>
+                document.getElementById("current_date").innerHTML = Date();
+            </script>
+
+</body>
+
+</html>
